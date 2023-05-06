@@ -110,6 +110,19 @@ header {
   margin-top: 22px;
   padding: 14px 8px;
 }
+label {
+  color: wheat;
+}
+#task9 {
+  height: 5em;
+  font-size: 0.8rem;
+}
+#task9::placeholder {
+  font-size: 0.7rem;
+}
+#result9 {
+  height: auto;
+}
 @media screen and (max-width: 1204px) {
   .box {
     width: 60%;

@@ -185,12 +185,25 @@
           element and displays a new array with all the objects sorted by a
           given property in an output element.
         </p>
-        <input
+        <textarea
           type="text"
           class="inputBox"
-          placeholder="Enter a Number"
+          placeholder="[{
+            'name': 'John',
+            'age': 25
+          },
+          {
+            'name': 'Jane',
+            'age': 30
+          }]"
           id="task9"
-        />
+        ></textarea>
+
+        <label for="sortProperty">Sort by:</label>
+        <select id="sortProperty" class="inputBox" name="sortProperty">
+          <option value="name">Name</option>
+          <option value="age">Age</option>
+        </select>
         <input
           type="button"
           class="submitBtn"

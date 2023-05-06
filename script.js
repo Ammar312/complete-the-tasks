@@ -120,4 +120,15 @@ window.getTask8 = () => {
   }
 };
 // Write a function that takes in an array of objects from an input element and displays a new array with all the objects sorted by a given property in an output element.
-window.getTask9 = () => {};
+function sortObjectsByProperty(objects, property) {
+  return objects.sort((a, b) => (a[property] > b[property] ? 1 : -1));
+}
+window.getTask9 = () => {
+  const inputArrayOfObject = document.querySelector("#task9").value;
+  const parseInObject = JSON.parse(inputArrayOfObject);
+  const sortProperty = document.querySelector("#sortProperty").value;
+
+  const sortedArray = sortObjectsByProperty(parseInObject, sortProperty);
+  document.querySelector("#result9").style.display = "block";
+  document.querySelector("#result9").textContent = JSON.stringify(sortedArray);
+};
